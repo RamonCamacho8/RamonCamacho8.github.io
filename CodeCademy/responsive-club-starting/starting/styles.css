@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+}
+nav ul {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+section {
+    width: 50%;
+    margin: 20px auto;
+    border-bottom: 1px solid #000;
+}
+
+section#home {
+    background-image: url();
+    text-align: center;
+    height: 100px;
+}
+
+section#members {
+    text-align: center;
+
+}
+
+section#members div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#members div figure{
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    
+}
+
+section#members figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+}
+
+section#gallery {
+    
+    bottom: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.memes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.memes img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+}
