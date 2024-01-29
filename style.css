@@ -4,15 +4,27 @@
     box-sizing: border-box;
     font-family: Roboto;
     text-align: center;
+    
 }
+
+html {
+    background-color: #121212;
+    color: #FAFAFA;
+    
+}
+
+body {
+}
+
 
 header {
     display: flex;
-    background-color: #86B6F6;
-    color: #176B87;
-    padding: 20px;
+    padding: 20px 40px;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    grid-area: "header";
 }
 
 h1 {
@@ -41,7 +53,7 @@ nav ul li{
 }
 
 nav ul li a:hover{
-    color: #104b5e;
+    color: #FAFAFA;
 }
 
 nav ul li a{
@@ -49,27 +61,109 @@ nav ul li a{
     color: inherit;
 }
 
-main {
-    height: 300px;
-    background-color: #B4D4FF;
+main{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    grid-area: "main";
+
 }
 
 section{
-    height: 200px;
-    background-color: white;
+
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    display: flex;
+    flex-direction: column;
 }
 
 
-footer {
-    position: fixed;
-    bottom: 0;
+div.header {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px;
     height: 50px;
-    background-color: #86B6F6;
-    color: #176B87;
+    border-radius: 10px 10px 0 0;
+}
+div.content {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+div.content figure {
+    width: 40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+div.content figure div.img {
+    width: 80%;
+}
+
+div.content figure div.img img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+div.about-text p {
+    text-align: left;
+    
+}
+
+div.about-text ul {
+    text-align: left;
+    list-style: none;
+    padding: 10px;
+    
+    
+}
+
+div.about-text ul li {
+    margin: 10px 0;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all 0.3s ease-in-out;
+
+}    
+
+div.about-text ul li:hover {
+    
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    
+}
+
+
+
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    height: 100px;
+    
 }
